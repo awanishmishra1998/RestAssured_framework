@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="RestAssured_TestNG_FRMTestSuite">
+    <listeners>
+        <listener class-name="reportUtils.TestListeners"/>
+    </listeners>
+    <test name="test">
+        <classes>
+<!--         <class name="test.AddPlaceAPI_POST"/>-->
+<!--            <class name="CRUD_OPERATION"/>-->
+<!--            <class name="test.TestingDemoPojo"/>-->
+            <class name="test.postCall"/>
+            <class name="test.getCall"/>
+            <class name="test.updateCall"/>
+            <class name="test.DeleteCall"/>
+        </classes>
+    </test>
+    </suite>
+
+
