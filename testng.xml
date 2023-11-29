@@ -6,7 +6,7 @@
     </listeners>
     <test name="test">
         <classes>
-<!--         <class name="test.AddPlaceAPI_POST"/>-->
+         <class name="test.AddPlaceAPI_POST"/>
 <!--            <class name="CRUD_OPERATION"/>-->
 <!--            <class name="test.TestingDemoPojo"/>-->
             <class name="test.postCall"/>

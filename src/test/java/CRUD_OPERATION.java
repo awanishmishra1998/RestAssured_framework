@@ -46,12 +46,12 @@ public class CRUD_OPERATION extends SpecBuilder {
 
     }
 
-//    @Test(priority = 3)
-//    public void deleteCall() throws FileNotFoundException {
-//        RequestSpecification requestSpecification = given().log().all().relaxedHTTPSValidation().queryParam("place_id",place_id)
-//                .spec(specbuilding().body(RequestPayload.deleteData().toString()));
-//        Response response = requestSpecification.when().delete(configReader.getdeleteResource());
-//        response.prettyPrint();
-//    }
+    @Test(priority = 3)
+    public void deleteCall() throws IOException {
+        RequestSpecification requestSpecification = given().log().all().relaxedHTTPSValidation().queryParam("place_id",place_id)
+                .spec(specbuilding().body(RequestPayload.deleteData().toString()));
+        Response response = requestSpecification.when().delete(configReader.getdeleteResource());
+        response.prettyPrint();
+    }
 
 }
